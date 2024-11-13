@@ -70,6 +70,9 @@
 		</div>
 		<!-- actions -->
 		<div class="absolute right-3 flex items-center gap-5">
+			<Tooltip text="Trial mode! Changes won’t be saved.">
+				<Badge v-show="store.isTrialMode">Trial Mode</Badge>
+			</Tooltip>
 			<Dialog
 				style="z-index: 40"
 				:options="{
@@ -159,7 +162,7 @@ import PlayIcon from "@/components/Icons/Play.vue";
 import SettingsGearIcon from "@/components/Icons/SettingsGear.vue";
 import { webPages } from "@/data/webPage";
 import { BuilderPage } from "@/types/Builder/BuilderPage";
-import { Dialog, Tooltip } from "frappe-ui";
+import { Badge, Dialog, Tooltip } from "frappe-ui";
 import Popover from "frappe-ui/src/components/Popover.vue";
 import { computed, ref } from "vue";
 import { toast } from "vue-sonner";
