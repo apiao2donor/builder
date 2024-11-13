@@ -134,6 +134,7 @@
 			<BuilderButton
 				variant="solid"
 				iconLeft="globe"
+				:disabled="store.isTrialMode"
 				@click="
 					() => {
 						publishing = true;
