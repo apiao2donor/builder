@@ -35,7 +35,8 @@
   "set_meta_tags",
   "options_tab",
   "authenticated_access",
-  "disable_indexing"
+  "disable_indexing",
+  "enable_trial_mode"
  ],
  "fields": [
   {
@@ -194,11 +195,17 @@
    "fieldname": "disable_indexing",
    "fieldtype": "Check",
    "label": "Disable Indexing"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_trial_mode",
+   "fieldtype": "Check",
+   "label": "Enable Trial Mode"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-02 14:20:24.457766",
+ "modified": "2024-11-13 21:01:42.799202",
  "modified_by": "Administrator",
  "module": "Builder",
  "name": "Builder Page",
@@ -228,6 +235,15 @@
    "role": "Website Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
   }
  ],
  "show_title_field_in_link": 1,
