@@ -14,6 +14,7 @@
 				],
 			},
 			{
+				group: 'Page',
 				hideLabel: true,
 				items: [
 					{
